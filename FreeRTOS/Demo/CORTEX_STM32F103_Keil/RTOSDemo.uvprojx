@@ -51,7 +51,7 @@
           <OutputName>RTOSDemo</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>0</CreateHexFile>
+          <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\</ListingPath>
@@ -110,12 +110,12 @@
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
           <SimDllArguments>  -MPU</SimDllArguments>
-          <SimDlgDll>DCM.DLL</SimDlgDll>
-          <SimDlgDllArguments>-pCM3</SimDlgDllArguments>
+          <SimDlgDll>DARMSTM.dll</SimDlgDll>
+          <SimDlgDllArguments>-pSTM32F103C8</SimDlgDllArguments>
           <TargetDllName>SARMCM3.DLL</TargetDllName>
           <TargetDllArguments> -MPU</TargetDllArguments>
-          <TargetDlgDll>TCM.DLL</TargetDlgDll>
-          <TargetDlgDllArguments>-pCM3</TargetDlgDllArguments>
+          <TargetDlgDll>DARMSTM.dll</TargetDlgDll>
+          <TargetDlgDllArguments>-pSTM32F103C8</TargetDlgDllArguments>
         </DllOption>
         <DebugOption>
           <OPTHX>
@@ -322,7 +322,7 @@
             <wLevel>0</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
-            <uC99>0</uC99>
+            <uC99>1</uC99>
             <useXO>0</useXO>
             <v6Lang>0</v6Lang>
             <v6LangP>0</v6LangP>
@@ -381,11 +381,6 @@
               <FilePath>.\STM32F10x.s</FilePath>
             </File>
             <File>
-              <FileName>lcd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Common\drivers\ST\STM32F10xFWLib\src\lcd.c</FilePath>
-            </File>
-            <File>
               <FileName>cortexm3_macro_rvds.s</FileName>
               <FileType>2</FileType>
               <FilePath>..\Common\drivers\ST\STM32F10xFWLib\src\cortexm3_macro_rvds.s</FilePath>
@@ -436,69 +431,14 @@
           <GroupName>Demo Files</GroupName>
           <Files>
             <File>
-              <FileName>ParTest.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\ParTest\ParTest.c</FilePath>
-            </File>
-            <File>
               <FileName>serial.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\serial\serial.c</FilePath>
             </File>
             <File>
-              <FileName>timertest.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\timertest.c</FilePath>
-            </File>
-            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\main.c</FilePath>
-            </File>
-            <File>
-              <FileName>spi_flash.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\spi_flash.c</FilePath>
-            </File>
-            <File>
-              <FileName>semtest.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Common\Minimal\semtest.c</FilePath>
-            </File>
-            <File>
-              <FileName>BlockQ.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Common\Minimal\BlockQ.c</FilePath>
-            </File>
-            <File>
-              <FileName>blocktim.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Common\Minimal\blocktim.c</FilePath>
-            </File>
-            <File>
-              <FileName>comtest.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Common\Minimal\comtest.c</FilePath>
-            </File>
-            <File>
-              <FileName>death.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Common\Minimal\death.c</FilePath>
-            </File>
-            <File>
-              <FileName>flash.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Common\Minimal\flash.c</FilePath>
-            </File>
-            <File>
-              <FileName>integer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Common\Minimal\integer.c</FilePath>
-            </File>
-            <File>
-              <FileName>PollQ.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Common\Minimal\PollQ.c</FilePath>
             </File>
           </Files>
         </Group>

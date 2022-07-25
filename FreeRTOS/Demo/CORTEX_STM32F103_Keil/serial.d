@@ -25,3 +25,4 @@
 .\serial.o: .\STM32F10xFWLib\inc\stm32f10x_systick.h
 .\serial.o: .\STM32F10xFWLib\inc\stm32f10x_usart.h
 .\serial.o: ..\Common\include\serial.h
+.\serial.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
